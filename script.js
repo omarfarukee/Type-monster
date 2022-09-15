@@ -124,7 +124,8 @@ const start = () => {
 };
 
 // START Countdown
-startBtn.addEventListener("click", start);
+// 1st bug done >>>>>>>>>>>>>>>>>>>>>>>>>>>_------------------------
+const startButton = document.addEventListener("click", start);
 
 // If history exists, show it
 displayHistory();
