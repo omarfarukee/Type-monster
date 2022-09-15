@@ -11,6 +11,22 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+.display{
+  display: flex;
+  padding-top: 1%;
+  align-items: center;
+  justify-content: center;
+}
+.home{
+  width:80px;
+  margin-right: 10%;
+}
+.blog{
+  width:80px;
+  margin-left: 10%;
+}
+
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -204,4 +220,28 @@ button {
     justify-content: space-around;
    
   }
+  .display{
+    display: flex;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
 }
+.home{
+  width:60px;
+  font-size: 15px;
+  height:40px;
+  padding-right: 14%;
+}
+.blog{
+
+  width:80px;
+  font-size: 15px;
+  height:40px;
+
+}
+.title img {
+
+  width:150px;
+}
+}
+

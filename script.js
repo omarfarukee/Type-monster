@@ -1,6 +1,6 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
-const startBtn = document.getElementById("start");
+const startBtn = document.getElementById("starts");// bug 1 fixed>>>>----
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
@@ -46,6 +46,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount++
   }
 
   // check if given question text is equal to user typed text
@@ -126,7 +127,7 @@ const start = () => {
 
 // START Countdown
 // 1st bug done >>>>>>>>>>>>>>>>>>>>>>>>>>>_------------------------
-const startButton = document.addEventListener("click", start);
+ startBtn.addEventListener("click", start);
 
 // If history exists, show it
 displayHistory();
@@ -135,7 +136,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = Math.ceil((currentTime - startTime) / 1000);
-
+ //console.log(timeSpent)
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
