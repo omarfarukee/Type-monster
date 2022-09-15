@@ -17,6 +17,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+#homes{
+  border-bottom:1px solid white;
+}
 .home{
   width:80px;
   margin-right: 10%;
@@ -25,7 +28,10 @@ body {
   width:80px;
   margin-left: 10%;
 }
-
+.a{
+  text-decoration: none;
+  color: white;
+}
 
 .box-container {
   width: 70%;
@@ -242,6 +248,10 @@ button {
 .title img {
 
   width:150px;
+}
+#question{
+  font-size:16px;
+  padding-left:3%;
 }
 }
 
